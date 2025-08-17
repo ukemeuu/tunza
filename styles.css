@@ -322,6 +322,15 @@ a {
   gap: 24px;
   margin-top: 14px;
 }
+/* Center Featured Listings chip & heading */
+.featured-listings {
+  text-align: center;
+}
+
+.featured-listings .chip-accent {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
 
 .listing-card {
   position: relative;
@@ -516,6 +525,15 @@ a {
   background: #ffe1e4;
   border: 1px solid #ffd1d7;
   margin-bottom: 10px;
+}
+/* === Services Section Header Centering === */
+.services-header {
+  text-align: center;
+}
+
+.services-header .chip-accent {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 /* Right column with the vertical rail */
