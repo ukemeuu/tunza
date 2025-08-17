@@ -65,3 +65,7 @@ const io = new IntersectionObserver(
 document
   .querySelectorAll(".card, .headline, .section-title")
   .forEach((el) => io.observe(el));
+// toggle “save” heart
+document.querySelectorAll(".listing-card .fav").forEach((btn) => {
+  btn.addEventListener("click", () => btn.classList.toggle("active"));
+});
