@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunza — We Care, We Build</title>
+    <meta name="description" content="Tunza one-page website template." />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="Tunza home">
+          <img
+            src="images/tunza-spaces-logo.png"
+            alt="Tunza Spaces Logo"
+            class="logo-img"
+          />
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li>
+              <a href="#contact" class="btn pill primary small">Get Started</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn pill primary">Get Started</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="heroTitle" class="headline">
+              Your Airbnb, our responsibility.
+            </h1>
+            <p class="subhead">
+              Complete property care — from cleaning and maintenance<br />
+              to sourcing, styling, and listing your space — stress-free.
+            </p>
+            <div class="cta-row">
+              <a href="#contact" class="btn primary">Talk to us</a>
+              <a href="#services" class="btn outline">See services</a>
+            </div>
+          </div>
+
+          <!-- Hero image on the right -->
+          <div class="hero-art" aria-hidden="true">
+            <img src="images/hero-image.png" alt="Modern Airbnb living space" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Tunza</h2>
+          <p class="section-sub">
+            Smart Airbnb management in Nairobi—driven by cleaning automation,
+            design flair, and reliable execution.
+          </p>
+
+          <div class="grid three">
+            <article class="card">
+              <div class="icon-dot"></div>
+              <h3>✨ Effortless Cleaning, Every Stay</h3>
+              <p>
+                Automated scheduling, dependable crews, and spotless
+                execution—guaranteeing 5-star cleanliness for every guest
+                check-in.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon-dot"></div>
+              <h3>🤝 Consistency You Can Count On</h3>
+              <p>
+                Clear communication, proactive management, and with our
+                technicians on standby, any plumbing, electrical, or repair
+                issue is reported and fixed fast—so your revenue stays
+                protected.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="icon-dot"></div>
+              <h3>🏠 Properties That Guests Love</h3>
+              <p>
+                We scout the right properties, liaise with landlords, or guide
+                you in buying—then transform interiors into high-earning Airbnb
+                stays.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Services (rail layout) -->
+      <section id="services" class="section services-rail">
+        <div class="container services-grid">
+          <!-- Left: sticky intro -->
+          <aside class="services-intro">
+            <span class="chip-accent">What we do</span>
+            <h2 class="section-title">Services</h2>
+            <p class="section-sub">
+              Everything you need for guest-ready spaces—run smoothly and
+              reliably.
+            </p>
+          </aside>
+
+          <!-- Right: service rows -->
+          <div class="services-rows">
+            <!-- Row 1 -->
+            <article class="service-row">
+              <div class="service-head">
+                <div class="service-icon">
+                  <!-- towel/cleaning icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7 7h10a3 3 0 013 3v6a3 3 0 01-3 3H7a3 3 0 01-3-3V10a3 3 0 013-3zm0-2a5 5 0 00-5 5v6a5 5 0 005 5h10a5 5 0 005-5V10a5 5 0 00-5-5H7z"
+                    />
+                  </svg>
+                </div>
+                <h3>🧹 Turnovers</h3>
+                <span class="service-badge">Per stay</span>
+              </div>
+              <ul class="service-points">
+                <li>Automated cleaning schedules</li>
+                <li>Fresh linens & towels every booking</li>
+                <li>Essentials restocked + staging for reviews that wow</li>
+              </ul>
+            </article>
+
+            <!-- Row 2 -->
+            <article class="service-row">
+              <div class="service-head">
+                <div class="service-icon">
+                  <!-- wrench/maintenance icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M22 19l-6.6-6.6a6 6 0 11-2.8-2.8L19 16.2V19h3zM9 14a5 5 0 100-10 5 5 0 000 10z"
+                    />
+                  </svg>
+                </div>
+                <h3>🛠 Maintenance</h3>
+                <span class="service-badge alt">Scheduled</span>
+              </div>
+              <ul class="service-points">
+                <li>Technicians on-call for plumbing, electrical & repairs</li>
+                <li>Preventive checks to avoid costly surprises</li>
+                <li>Issues logged, fixed, and confirmed</li>
+              </ul>
+            </article>
+
+            <!-- Row 3 -->
+            <article class="service-row">
+              <div class="service-head">
+                <div class="service-icon">
+                  <!-- ops/chat icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M21 6a3 3 0 00-3-3H6A3 3 0 003 6v7a3 3 0 003 3h2v4l4-4h6a3 3 0 003-3V6z"
+                    />
+                  </svg>
+                </div>
+                <h3>🛋 Host Ops</h3>
+              </div>
+              <ul class="service-points">
+                <li>
+                  We upgrade interiors so they perform better & attract higher
+                  bookings
+                </li>
+                <li>Inventory & consumables tracking—always guest-ready</li>
+                <li>24/7 escalation & guest support line</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing (3 subscriptions) -->
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2 class="section-title">Subscriptions</h2>
+          <p class="section-sub">Simple monthly plans. Cancel anytime.</p>
+
+          <div class="pricing grid three">
+            <article class="card price-card">
+              <span class="chip">Starter</span>
+              <p class="price">KSh 4,999<span>/mo</span></p>
+              <ul class="features">
+                <li>8 cleanings / month</li>
+                <li>Hotel-style staging + linens</li>
+                <li>Guest essentials restock</li>
+                <li>Photo proof after every turnover</li>
+              </ul>
+              <a href="#contact" class="btn primary full">Choose Starter</a>
+            </article>
+
+            <article class="card price-card featured">
+              <span class="chip hot">Growth</span>
+              <p class="price">KSh 7,999<span>/mo</span></p>
+              <ul class="features">
+                <li>Everything in Starter</li>
+                <li>Light maintenance & fixes</li>
+                <li>Mid-stay refresh (on request)</li>
+                <li>Monthly inventory & report</li>
+              </ul>
+              <a href="#contact" class="btn primary full">Choose Growth</a>
+            </article>
+
+            <article class="card price-card">
+              <span class="chip">Pro</span>
+              <p class="price">KSh 9,999<span>/mo</span></p>
+              <ul class="features">
+                <li>Everything in Growth</li>
+                <li>Vendor coordination (plumbing, electrical)</li>
+                <li>Priority scheduling</li>
+                <li>24/7 escalation support</li>
+              </ul>
+              <a href="#contact" class="btn primary full">Choose Pro</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="section soft">
+        <div class="container">
+          <h2 class="section-title">What clients say</h2>
+          <div class="grid two">
+            <article class="quote card">
+              <p>
+                “Tunza kept our occupancy high and reviews glowing. Zero stress,
+                five-star stays.”
+              </p>
+              <span class="byline">— Grace K., Host</span>
+            </article>
+            <article class="quote card">
+              <p>
+                “Clear comms, reliable teams, and spotless results. We recommend
+                them to every host.”
+              </p>
+              <span class="byline">— Daniel M., Property Manager</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <h2 class="section-title">FAQ</h2>
+          <details class="card">
+            <summary>How fast can you start?</summary>
+            <p>
+              Typically within 5 business days depending on your location and
+              scope.
+            </p>
+          </details>
+          <details class="card">
+            <summary>Do you provide supplies?</summary>
+            <p>
+              Yes. We manage a consumables plan so you never run out of
+              essentials.
+            </p>
+          </details>
+          <details class="card">
+            <summary>Can I pause the plan?</summary>
+            <p>Yes—plans are month-to-month. Pause or upgrade anytime.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section soft">
+        <div class="container contact-grid">
+          <div>
+            <h2 class="section-title">Contact us</h2>
+            <p class="section-sub">
+              Tell us about your space. We’ll get back within 24 hours.
+            </p>
+
+            <form id="contactForm" novalidate>
+              <label class="sr-only" for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+
+              <label class="sr-only" for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email address"
+                required
+              />
+
+              <label class="sr-only" for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Project details"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn primary">Send message</button>
+              <p id="formNote" class="form-note" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="card contact-card">
+            <h3>Visit</h3>
+            <p>Maralal Oasis, Rose Avenue<br />Nairobi, Kenya</p>
+            <h3>Call</h3>
+            <p><a href="tel:+254795384140">+254 795 384 140</a></p>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@tunza.co">hello@tunza.co</a></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot">
+        <p>© <span id="year"></span> Tunza. All rights reserved.</p>
+        <div class="social">
+          <a href="#" aria-label="Twitter/X">X</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
