@@ -429,7 +429,11 @@
               Tell us about your space. We’ll get back within 24 hours.
             </p>
 
-            <form id="contactForm" novalidate>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xblakean"
+              method="POST"
+            >
               <label class="sr-only" for="name">Name</label>
               <input
                 id="name"
@@ -457,8 +461,9 @@
                 required
               ></textarea>
 
+              <!-- Button + Feedback Message -->
               <button type="submit" class="btn primary">Send message</button>
-              <p id="formNote" class="form-note" aria-live="polite"></p>
+              <div id="formNote" class="form-note"></div>
             </form>
           </div>
 

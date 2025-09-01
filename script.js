@@ -24,22 +24,46 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Contact form (frontend validation only)
+// Contact form (Formspree AJAX)
 const form = $("#contactForm");
 const formNote = $("#formNote");
-form?.addEventListener("submit", (e) => {
+
+form?.addEventListener("submit", async (e) => {
   e.preventDefault();
+
   const data = Object.fromEntries(new FormData(form));
+
+  // Basic validation
   if (!data.name || !data.email || !data.message) {
-    formNote.textContent = "Please fill in all fields.";
+    formNote.textContent = "⚠️ Please fill in all fields.";
+    formNote.style.color = "red";
     return;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-    formNote.textContent = "Please enter a valid email address.";
+    formNote.textContent = "⚠️ Please enter a valid email address.";
+    formNote.style.color = "red";
     return;
   }
-  formNote.textContent = "Thanks! Your message has been sent.";
-  form.reset();
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      formNote.textContent = "✅ Thanks! Your message has been sent.";
+      formNote.style.color = "green";
+      form.reset();
+    } else {
+      formNote.textContent = "❌ Oops! Something went wrong. Please try again.";
+      formNote.style.color = "red";
+    }
+  } catch (err) {
+    formNote.textContent = "❌ Network error. Please try again.";
+    formNote.style.color = "red";
+  }
 });
 
 // Year
@@ -65,6 +89,7 @@ const io = new IntersectionObserver(
 document
   .querySelectorAll(".card, .headline, .section-title")
   .forEach((el) => io.observe(el));
+
 // toggle “save” heart
 document.querySelectorAll(".listing-card .fav").forEach((btn) => {
   btn.addEventListener("click", () => btn.classList.toggle("active"));
