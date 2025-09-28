@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4182298997337924"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CRMK4FFQBT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-CRMK4FFQBT");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tunza — We Care, We Build</title>
+    <title>Tunza — Your Space, Our Responsibility</title>
     <meta name="description" content="Tunza one-page website template." />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="images/favicon.png"
+      type="image/png"
+      sizes="512x512"
+    />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
 
     <!-- Font -->
     <link
@@ -15,6 +41,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
@@ -22,11 +49,7 @@
     <header class="site-header" id="top">
       <div class="container nav">
         <a href="#top" class="brand" aria-label="Tunza home">
-          <img
-            src="images/tunza-spaces-logo.png"
-            alt="Tunza Spaces Logo"
-            class="logo-img"
-          />
+          <img src="images/logo.png" alt="Tunza Spaces Logo" class="logo-img" />
         </a>
 
         <nav class="primary-nav" aria-label="Primary">
@@ -63,22 +86,35 @@
       <!-- Hero -->
       <section class="hero" id="home" aria-labelledby="heroTitle">
         <div class="container hero-grid">
-          <div class="hero-copy">
-            <h1 id="heroTitle" class="headline">
+          <div class="hero-copy" data-stagger style="--stagger: 90ms">
+            <h1 id="heroTitle" class="headline" data-animate="fade-up">
               Your Airbnb, our responsibility.
             </h1>
-            <p class="subhead">
+            <p class="subhead" data-animate="fade-up" data-delay="90">
               Complete property care — from cleaning and maintenance<br />
               to sourcing, styling, and listing your space — stress-free.
             </p>
             <div class="cta-row">
-              <a href="#contact" class="btn primary">Talk to us</a>
-              <a href="#services" class="btn outline">See services</a>
+              <a href="#contact" class="btn primary" data-animate="fade-up"
+                >Talk to us</a
+              >
+              <a
+                href="#services"
+                class="btn outline"
+                data-animate="fade-up"
+                data-delay="90"
+                >See services</a
+              >
             </div>
           </div>
 
-          <!-- Hero image on the right -->
-          <div class="hero-art" aria-hidden="true">
+          <div
+            class="hero-art parallax"
+            data-parallax="0.12"
+            data-animate="scale-in"
+            data-delay="120"
+            aria-hidden="true"
+          >
             <img src="images/hero-image.png" alt="Modern Airbnb living space" />
           </div>
         </div>
@@ -87,14 +123,14 @@
       <!-- About -->
       <section id="about" class="section">
         <div class="container">
-          <h2 class="section-title">About Tunza</h2>
-          <p class="section-sub">
+          <h2 class="section-title" data-animate="fade-up">About Tunza</h2>
+          <p class="section-sub" data-animate="fade-up" data-delay="80">
             Smart Airbnb management in Nairobi—driven by cleaning automation,
             design flair, and reliable execution.
           </p>
 
-          <div class="grid three">
-            <article class="card">
+          <div class="grid three" data-stagger style="--stagger: 100ms">
+            <article class="card" data-animate="fade-up">
               <div class="icon-dot"></div>
               <h3>✨ Effortless Cleaning, Every Stay</h3>
               <p>
@@ -104,41 +140,45 @@
               </p>
             </article>
 
-            <article class="card">
+            <article class="card" data-animate="fade-up">
               <div class="icon-dot"></div>
               <h3>🤝 Consistency You Can Count On</h3>
               <p>
                 Clear communication, proactive management, and with our
-                technicians on standby, any plumbing, electrical, or repair
-                issue is reported and fixed fast—so your revenue stays
-                protected.
+                technicians on standby, any issue is fixed fast—so your revenue
+                stays protected.
               </p>
             </article>
 
-            <article class="card">
+            <article class="card" data-animate="fade-up">
               <div class="icon-dot"></div>
               <h3>🏠 Properties That Guests Love</h3>
               <p>
                 We scout the right properties, liaise with landlords, or guide
-                you in buying—then transform interiors into high-earning Airbnb
+                your purchase—then transform interiors into high-earning Airbnb
                 stays.
               </p>
             </article>
           </div>
         </div>
       </section>
+
       <!-- Featured Listings -->
       <section id="featured" class="section soft featured-listings">
         <div class="container">
-          <span class="chip-accent">Featured listings</span>
-          <h2 class="section-title">Tunza Spaces</h2>
-          <p class="section-sub">
+          <span class="chip-accent" data-animate="fade-up"
+            >Featured listings</span
+          >
+          <h2 class="section-title" data-animate="fade-up" data-delay="60">
+            Tunza Spaces
+          </h2>
+          <p class="section-sub" data-animate="fade-up" data-delay="100">
             High-performing, guest-ready spaces we manage.
           </p>
 
-          <div class="listing-grid">
+          <div class="listing-grid" data-stagger style="--stagger: 100ms">
             <!-- Card 1 -->
-            <article class="listing-card">
+            <article class="listing-card" data-animate="fade-up">
               <button class="fav" aria-label="Save listing" title="Save">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -150,16 +190,18 @@
                 <img
                   src="images/listing-1.jpg"
                   alt="Riverside Studio, Kileleshwa"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <span class="img-badge">New</span>
               </div>
               <div class="listing-body">
                 <h3 class="listing-title">Riverside Studio</h3>
-                <p class="listing-meta">Kileleshwa • Studio • 2 guests</p>
+                <p class="listing-meta">Riverside • Studio • 2 guests</p>
                 <ul class="amen">
                   <li>Self check-in</li>
-                  <li>Weekly clean</li>
-                  <li>200 Mbps Wi-Fi</li>
+                  <li>Superhost</li>
+                  <li>Fast Wi-Fi</li>
                 </ul>
                 <div class="listing-foot">
                   <div class="price">
@@ -171,7 +213,7 @@
             </article>
 
             <!-- Card 2 -->
-            <article class="listing-card">
+            <article class="listing-card" data-animate="fade-up">
               <button class="fav" aria-label="Save listing" title="Save">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -180,7 +222,12 @@
                 </svg>
               </button>
               <div class="media">
-                <img src="images/listing-2.jpg" alt="Modern 1-bed, Westlands" />
+                <img
+                  src="images/listing-2.jpg"
+                  alt="Modern 1-bed, Westlands"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="img-badge dark">Top rated</span>
               </div>
               <div class="listing-body">
@@ -201,7 +248,7 @@
             </article>
 
             <!-- Card 3 -->
-            <article class="listing-card">
+            <article class="listing-card" data-animate="fade-up">
               <button class="fav" aria-label="Save listing" title="Save">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -210,16 +257,21 @@
                 </svg>
               </button>
               <div class="media">
-                <img src="images/listing-3.jpg" alt="Designer Loft, Kilimani" />
+                <img
+                  src="images/listing-3.jpg"
+                  alt="Designer Loft, Kilimani"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="img-badge">Renovated</span>
               </div>
               <div class="listing-body">
                 <h3 class="listing-title">Designer Loft</h3>
                 <p class="listing-meta">Kilimani • 2 beds • 4 guests</p>
                 <ul class="amen">
-                  <li>A/C</li>
+                  <li>Free coffee</li>
                   <li>Balcony</li>
-                  <li>Weekly linen</li>
+                  <li>Fresh linen</li>
                 </ul>
                 <div class="listing-foot">
                   <div class="price">
@@ -231,33 +283,99 @@
             </article>
           </div>
 
-          <div class="cta-row center">
-            <a href="#contact" class="btn pill outline">Get started today</a>
-            <a href="#contact" class="btn pill primary">Manage My Property</a>
+          <div class="cta-row center" data-stagger>
+            <a href="#contact" class="btn pill outline" data-animate="fade-up"
+              >Get started today</a
+            >
+            <a
+              href="#contact"
+              class="btn pill primary"
+              data-animate="fade-up"
+              data-delay="90"
+              >Manage My Property</a
+            >
           </div>
         </div>
       </section>
 
-      <!-- Services (rail layout) -->
+      <!-- Lead Magnet -->
+      <section
+        id="guide"
+        class="section lead-section"
+        aria-labelledby="leadTitle"
+      >
+        <div class="container lead-wrap">
+          <h2 id="leadTitle" class="lead-title" data-animate="fade-up">
+            Unlock Your Home’s Potential
+          </h2>
+          <p class="lead-sub" data-animate="fade-up" data-delay="80">
+            Get The ultimate Airbnb cleaning checklist
+          </p>
+
+          <form
+            id="leadForm"
+            class="lead-form"
+            action="https://formspree.io/f/xblakean"
+            method="POST"
+            novalidate
+            data-animate="fade-up"
+            data-delay="120"
+          >
+            <label class="sr-only" for="leadEmail">Email</label>
+            <input
+              id="leadEmail"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+              inputmode="email"
+              autocomplete="email"
+              aria-describedby="leadNote"
+            />
+            <input
+              type="hidden"
+              name="form"
+              value="Lead Magnet: Airbnb Setup Guide"
+            />
+            <button type="submit" class="btn pill lead-btn">
+              Download the PDF
+            </button>
+          </form>
+
+          <p id="leadNote" class="lead-note" aria-live="polite"></p>
+
+          <!-- Fallback link if auto-download is blocked -->
+          <p class="lead-fallback">
+            <a
+              href="images/docs/Tunza_Airbnb_Cleaning_Checklist.pdf"
+              id="leadDownloadLink"
+              download
+              hidden
+            >
+              Click here if your download didn’t start.
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Services -->
       <section id="services" class="section services-rail">
         <div class="container services-grid">
-          <!-- Left: sticky intro -->
-          <aside class="services-intro services-header">
-            <span class="chip-accent">What we do</span>
-            <h2 class="section-title">Services</h2>
-            <p class="section-sub">
+          <aside class="services-intro services-header" data-stagger>
+            <span class="chip-accent" data-animate="fade-up">What we do</span>
+            <h2 class="section-title" data-animate="fade-up" data-delay="80">
+              Services
+            </h2>
+            <p class="section-sub" data-animate="fade-up" data-delay="120">
               Everything you need for guest-ready spaces—run smoothly and
               reliably.
             </p>
           </aside>
 
-          <!-- Right: service rows -->
-          <div class="services-rows">
-            <!-- Row 1 -->
-            <article class="service-row">
+          <div class="services-rows" data-stagger style="--stagger: 100ms">
+            <article class="service-row" data-animate="fade-up">
               <div class="service-head">
                 <div class="service-icon">
-                  <!-- towel/cleaning icon -->
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       d="M7 7h10a3 3 0 013 3v6a3 3 0 01-3 3H7a3 3 0 01-3-3V10a3 3 0 013-3zm0-2a5 5 0 00-5 5v6a5 5 0 005 5h10a5 5 0 005-5V10a5 5 0 00-5-5H7z"
@@ -275,11 +393,9 @@
               </ul>
             </article>
 
-            <!-- Row 2 -->
-            <article class="service-row">
+            <article class="service-row" data-animate="fade-up">
               <div class="service-head">
                 <div class="service-icon">
-                  <!-- wrench/maintenance icon -->
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       d="M22 19l-6.6-6.6a6 6 0 11-2.8-2.8L19 16.2V19h3zM9 14a5 5 0 100-10 5 5 0 000 10z"
@@ -296,11 +412,9 @@
               </ul>
             </article>
 
-            <!-- Row 3 -->
-            <article class="service-row">
+            <article class="service-row" data-animate="fade-up">
               <div class="service-head">
                 <div class="service-icon">
-                  <!-- ops/chat icon -->
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       d="M21 6a3 3 0 00-3-3H6A3 3 0 003 6v7a3 3 0 003 3h2v4l4-4h6a3 3 0 003-3V6z"
@@ -320,50 +434,220 @@
         </div>
       </section>
 
-      <!-- Pricing (3 subscriptions) -->
+      <!-- Interior Makeover (Before / After) -->
+      <section id="makeover" class="section soft">
+        <div class="container makeover-wrap">
+          <div class="makeover-copy" data-stagger>
+            <h2 class="section-title" data-animate="fade-up">
+              Restyle your interior. Earn more.
+            </h2>
+            <p class="section-sub" data-animate="fade-up" data-delay="80">
+              A stylish interior drives bookings. <br />With our experienced
+              interior designers, a quick restyling can raise your nightly rates
+              and boost 5★ reviews. We’ll transform your space, style it to
+              impress, and optimize your listing.
+            </p>
+            <p data-animate="fade-up" data-delay="120">
+              Ready to make guests fall in love with your space?
+              <strong>We’ll handle everything</strong> — palette, furniture
+              layout, and pro photography — so you make more with less effort.
+            </p>
+            <a
+              href="#contact"
+              class="btn pill primary"
+              data-animate="fade-up"
+              data-delay="160"
+              >Redo my interior</a
+            >
+          </div>
+
+          <!-- Slider -->
+          <figure
+            class="makeover-compare parallax"
+            data-parallax="0.08"
+            data-animate="scale-in"
+            aria-label="Before and after interior comparison"
+          >
+            <img
+              src="images/before.png"
+              alt="Before interior"
+              class="mk-img mk-before"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="images/after.png"
+              alt="After interior"
+              class="mk-img mk-after"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <!-- Slider handle -->
+            <input
+              type="range"
+              class="mk-range"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Slide to compare before and after"
+            />
+            <div class="mk-handle" aria-hidden="true"></div>
+            <figcaption class="mk-tags">
+              <span class="tag before">Before</span>
+              <span class="tag after">After</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Distribution partners (belt) -->
+      <section class="section" aria-label="Distribution partners">
+        <div class="container">
+          <h2 class="section-title" data-animate="fade-up">
+            Where We Market Your Property
+          </h2>
+          <p class="section-sub" data-animate="fade-up" data-delay="80">
+            Multi-channel distribution for maximum visibility and bookings.
+          </p>
+
+          <div class="partner-belt" data-animate="fade-up" data-delay="120">
+            <div class="belt-track">
+              <img
+                src="images/logos/airbnb.png"
+                alt="Airbnb"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/google.png"
+                alt="Google"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/expedia.png"
+                alt="Expedia"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/booking.png"
+                alt="Booking.com"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/vrbo.png"
+                alt="Vrbo"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/hopper.png"
+                alt="Hopper"
+                loading="lazy"
+                decoding="async"
+              />
+              <!-- duplicate once for seamless loop -->
+              <img
+                src="images/logos/airbnb.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/google.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/expedia.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/booking.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/vrbo.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="images/logos/hopper.png"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
       <section id="pricing" class="section">
         <div class="container">
-          <h2 class="section-title">Subscriptions</h2>
-          <p class="section-sub">Simple monthly plans. Cancel anytime.</p>
+          <h2 class="section-title" data-animate="fade-up">Subscriptions</h2>
+          <p class="section-sub" data-animate="fade-up" data-delay="80">
+            Simple monthly plans. Cancel anytime.
+          </p>
 
-          <div class="pricing grid three">
-            <article class="card price-card">
-              <span class="chip">Basic</span>
+          <div class="pricing grid three" data-stagger style="--stagger: 100ms">
+            <article class="card price-card" data-animate="fade-up">
+              <span class="chip">Starter Package (Studios & 1-Beds)</span>
               <p class="price">KSh 5,999<span>/mo</span></p>
               <ul class="features">
-                <li>Unlimited Cleaning (Per Month)</li>
+                <li>Unlimited cleaning after each booking</li>
                 <li>Search-friendly descriptions for your listing</li>
-                <li>
-                  Inspect property before the guest arrives and again after the
-                  guest departs
-                </li>
-                <li>Guest essentials restock</li>
+                <li>Pre & post-stay inspections</li>
+                <li>Coordinate essentials restock</li>
                 <li>Photo proof after every turnover</li>
               </ul>
               <a href="#contact" class="btn primary full">Choose Basic</a>
             </article>
 
-            <article class="card price-card featured">
-              <span class="chip hot">Growth</span>
+            <article
+              class="card price-card featured"
+              data-animate="fade-up"
+              data-delay="80"
+            >
+              <span class="chip hot">Growth (2–3 Beds)</span>
               <p class="price">KSh 7,999<span>/mo</span></p>
               <ul class="features">
                 <li>Everything in Basic</li>
-                <li>Perform routine maintenance checks on property</li>
-                <li>Mid-stay refresh (on request)</li>
+                <li>Routine maintenance checks</li>
+                <li>Quarterly fumigation – keep pests away</li>
                 <li>Monthly inventory & report</li>
                 <li>Guest & Owner Support</li>
               </ul>
               <a href="#contact" class="btn primary full">Choose Growth</a>
             </article>
 
-            <article class="card price-card">
-              <span class="chip">Pro</span>
+            <article
+              class="card price-card"
+              data-animate="fade-up"
+              data-delay="120"
+            >
+              <span class="chip">Pro (Premium Listings)</span>
               <p class="price">KSh 9,999<span>/mo</span></p>
               <ul class="features">
                 <li>Everything in Growth</li>
-                <li>24/7 emergency contact & maintenance coordination</li>
-                <li>High-quality photography of your property</li>
-                <li>Feature on our site & top booking platforms</li>
+                <li>24/7 emergency coordination</li>
+                <li>Pro photography of your property</li>
+                <li>Feature on our site & top platforms</li>
                 <li>Dedicated Performance Advisor</li>
               </ul>
               <a href="#contact" class="btn primary full">Choose Pro</a>
@@ -375,16 +659,16 @@
       <!-- Testimonials -->
       <section id="testimonials" class="section soft">
         <div class="container">
-          <h2 class="section-title">What clients say</h2>
-          <div class="grid two">
-            <article class="quote card">
+          <h2 class="section-title" data-animate="fade-up">What clients say</h2>
+          <div class="grid two" data-stagger style="--stagger: 120ms">
+            <article class="quote card" data-animate="fade-up">
               <p>
                 “Tunza kept our occupancy high and reviews glowing. Zero stress,
                 five-star stays.”
               </p>
               <span class="byline">— Grace K., Host</span>
             </article>
-            <article class="quote card">
+            <article class="quote card" data-animate="fade-up" data-delay="80">
               <p>
                 “Clear comms, reliable teams, and spotless results. We recommend
                 them to every host.”
@@ -398,22 +682,22 @@
       <!-- FAQ -->
       <section id="faq" class="section">
         <div class="container">
-          <h2 class="section-title">FAQ</h2>
-          <details class="card">
+          <h2 class="section-title" data-animate="fade-up">FAQ</h2>
+          <details class="card" data-animate="fade-up">
             <summary>How fast can you start?</summary>
             <p>
               Typically within 5 business days depending on your location and
               scope.
             </p>
           </details>
-          <details class="card">
+          <details class="card" data-animate="fade-up" data-delay="80">
             <summary>Do you provide supplies?</summary>
             <p>
               Yes. We manage a consumables plan so you never run out of
               essentials.
             </p>
           </details>
-          <details class="card">
+          <details class="card" data-animate="fade-up" data-delay="120">
             <summary>Can I pause the plan?</summary>
             <p>Yes—plans are month-to-month. Pause or upgrade anytime.</p>
           </details>
@@ -422,10 +706,10 @@
 
       <!-- Contact -->
       <section id="contact" class="section soft">
-        <div class="container contact-grid">
+        <div class="container contact-grid" data-stagger>
           <div>
-            <h2 class="section-title">Contact us</h2>
-            <p class="section-sub">
+            <h2 class="section-title" data-animate="fade-up">Contact us</h2>
+            <p class="section-sub" data-animate="fade-up" data-delay="80">
               Tell us about your space. We’ll get back within 24 hours.
             </p>
 
@@ -433,6 +717,8 @@
               id="contactForm"
               action="https://formspree.io/f/xblakean"
               method="POST"
+              data-animate="fade-up"
+              data-delay="120"
             >
               <label class="sr-only" for="name">Name</label>
               <input
@@ -461,19 +747,22 @@
                 required
               ></textarea>
 
-              <!-- Button + Feedback Message -->
               <button type="submit" class="btn primary">Send message</button>
               <div id="formNote" class="form-note"></div>
             </form>
           </div>
 
-          <aside class="card contact-card">
+          <aside
+            class="card contact-card"
+            data-animate="fade-up"
+            data-delay="160"
+          >
             <h3>Visit</h3>
             <p>Riverside Drive<br />Nairobi, Kenya</p>
             <h3>Call</h3>
             <p><a href="tel:+254795384140">+254 718 545 927</a></p>
             <h3>Email</h3>
-            <p><a href="mailto:hello@tunza.co">tunzaspaces@gmail.com </a></p>
+            <p><a href="mailto:hello@tunza.io">hello@tunza.io</a></p>
           </aside>
         </div>
       </section>
@@ -491,6 +780,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
